@@ -92,7 +92,7 @@ minimalBufferSize = minimalChunkSize + maxEncodingOverhead
 
 -- | Transform a builder such that it uses chunked HTTP transfer encoding.
 --
--- >>> :set -XOverloadedStrings
+-- >>> :seti -XOverloadedStrings
 -- >>> import Data.ByteString.Builder as B
 -- >>> let f = B.toLazyByteString . chunkedTransferEncoding . B.lazyByteString
 -- >>> f "data"
